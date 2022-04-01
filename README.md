@@ -24,7 +24,7 @@ start-hbase.sh
 
 4. Go to http://localhost:16010 to check its status:
 <p float="left">
-	<img src="pix/status.png" width="700" />
+	<img src="pix/status.png" width="800" />
 </p>
 
 5. Start the `HBase shell`:
