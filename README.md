@@ -61,4 +61,19 @@ ROW                                            COLUMN+CELL
 Took 0.0200 seconds
 ```
 
+## Benchmarking
+
+1. For 10 million rows, `join_by_spark` takes 48.58 seconds:
+```bash
+spark-submit --master local[*] join_by_spark.py
+```
+
+2. For 10 million rows, `join_by_sql` takes 2.90 seconds:
+```bash
+python join_by_sql.py
+```
+
 ## References
+* https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
+* https://towardsdatascience.com/guide-to-big-data-joins-python-sql-pandas-spark-dask-51b7f4fec810
+* https://docs.cloudera.com/cdp-private-cloud-base/7.1.6/managing-hbase/topics/hbase-example-using-hbase-spark-connector.html
