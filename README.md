@@ -85,6 +85,16 @@ python join_by_sql.py
 
 * A pseudo-distributed mode is simply a distributed mode run on a single host. Use this configuration testing and prototyping on HBase. Do not use this configuration for production nor for evaluating HBase performance. The configuration of pseudo-distributed mode is in the file [hbase-site.xml](conf/hbase-site.xml), which needs to be put in `$HBASE_HOME/conf/hbase-site.xml`.
 
+When HBase is running in a pseudo-distributed mode, there are following processes:
+```bash
+$ jps
+20238 HQuorumPeer
+
+$ lsof -i tcp:2181
+COMMAND   PID    USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+java    20238   hbase  200u  IPv6 0x6ddbe82308aba9fb      0t0  TCP *:eforward (LISTEN)
+```
+
 ## References
 * https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
 * https://towardsdatascience.com/guide-to-big-data-joins-python-sql-pandas-spark-dask-51b7f4fec810
