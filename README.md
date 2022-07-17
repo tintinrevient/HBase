@@ -88,8 +88,8 @@ python join_by_sql.py
 The configuration of the `standalone` mode is in [hbase-site.xml](conf/hbase-site.xml) and [hbase-env.sh](conf/hbase-env.sh), which need to be put in the `$HBASE_HOME/conf` folder.
 
 <p float="left">
-	<img src="pix/hbase_jdk_version.png" width="400" />
-	<img src="pix/hbase_hadoop_version.png" width="400" />
+	<img src="pix/hbase_jdk_version.png" width="430" />
+	<img src="pix/hbase_hadoop_version.png" width="380" />
 </p>
 
 ## References
