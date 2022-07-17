@@ -89,3 +89,5 @@ python join_by_sql.py
 * https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
 * https://towardsdatascience.com/guide-to-big-data-joins-python-sql-pandas-spark-dask-51b7f4fec810
 * https://docs.cloudera.com/cdp-private-cloud-base/7.1.6/managing-hbase/topics/hbase-example-using-hbase-spark-connector.html
+* http://svn.apache.org/repos/asf/hbase/hbase.apache.org/trunk/0.94/book/standalone_dist.html
+* https://docs.cloudera.com/HDPDocuments/Ambari-2.7.5.0/managing-high-availability/content/amb_start_and_test_your_hbase_cluster.html
