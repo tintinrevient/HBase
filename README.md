@@ -91,3 +91,4 @@ python join_by_sql.py
 * https://docs.cloudera.com/cdp-private-cloud-base/7.1.6/managing-hbase/topics/hbase-example-using-hbase-spark-connector.html
 * http://svn.apache.org/repos/asf/hbase/hbase.apache.org/trunk/0.94/book/standalone_dist.html
 * https://docs.cloudera.com/HDPDocuments/Ambari-2.7.5.0/managing-high-availability/content/amb_start_and_test_your_hbase_cluster.html
+* https://docs.cloudera.com/runtime/7.2.10/accessing-hbase/topics/hbase-use-commandline-utilities.html
