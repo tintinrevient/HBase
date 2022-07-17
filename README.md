@@ -83,17 +83,9 @@ python join_by_sql.py
 
 * Distributed mode can be subdivided into distributed but all daemons run on a single node -- a.k.a `pseudo-distributed` -- and `fully-distributed` where the daemons are spread across all nodes in the cluster. Distributed modes require an instance of the Hadoop Distributed File System (`HDFS`).
 
-* A pseudo-distributed mode is simply a distributed mode run on a single host. Use this configuration testing and prototyping on HBase. Do not use this configuration for production nor for evaluating HBase performance. The configuration of pseudo-distributed mode is in the file [hbase-site.xml](conf/hbase-site.xml), which needs to be put in `$HBASE_HOME/conf/hbase-site.xml`.
+* A pseudo-distributed mode is simply a distributed mode run on a single host. Use this configuration testing and prototyping on HBase. Do not use this configuration for production nor for evaluating HBase performance. 
 
-When HBase is running in a pseudo-distributed mode, there are following processes:
-```bash
-$ jps
-20238 HQuorumPeer
-
-$ lsof -i tcp:2181
-COMMAND   PID    USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
-java    20238   hbase  200u  IPv6 0x6ddbe82308aba9fb      0t0  TCP *:eforward (LISTEN)
-```
+The configuration of the `standalone` mode is in [hbase-site.xml](conf/hbase-site.xml) and [hbase-env.sh](conf/hbase-env.sh), which need to be put in the `$HBASE_HOME/conf` folder.
 
 ## References
 * https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
