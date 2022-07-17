@@ -76,7 +76,7 @@ python join_by_sql.py
 ## HBase run modes
 
 <p float="left">
-	<img src="pix/hbase_architecture.png" width="500" />
+	<img src="pix/hbase_architecture.png" width="550" />
 </p>
 
 * In `standalone` mode, HBase does not use `HDFS` -- it uses the local filesystem instead -- and it runs all HBase daemons and a `local ZooKeeper` all up in the same JVM. Zookeeper binds to a well known port `2181` so clients may talk to HBase.
