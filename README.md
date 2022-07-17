@@ -73,6 +73,18 @@ spark-submit --master local[*] join_by_spark.py
 python join_by_sql.py
 ```
 
+## HBase run modes
+
+<p float="left">
+	<img src="pix/hbase_architecture.png" width="500" />
+</p>
+
+* In `standalone` mode, HBase does not use `HDFS` -- it uses the local filesystem instead -- and it runs all HBase daemons and a `local ZooKeeper` all up in the same JVM. Zookeeper binds to a well known port `2181` so clients may talk to HBase.
+
+* Distributed mode can be subdivided into distributed but all daemons run on a single node -- a.k.a `pseudo-distributed` -- and `fully-distributed` where the daemons are spread across all nodes in the cluster. Distributed modes require an instance of the Hadoop Distributed File System (`HDFS`).
+
+* A pseudo-distributed mode is simply a distributed mode run on a single host. Use this configuration testing and prototyping on HBase. Do not use this configuration for production nor for evaluating HBase performance. The configuration of pseudo-distributed mode is in the file [hbase-site.xml](conf/hbase-site.xml), which needs to be put in `$HBASE_HOME/conf/hbase-site.xml`.
+
 ## References
 * https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
 * https://towardsdatascience.com/guide-to-big-data-joins-python-sql-pandas-spark-dask-51b7f4fec810
