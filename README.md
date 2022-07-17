@@ -102,3 +102,4 @@ java    20238   hbase  200u  IPv6 0x6ddbe82308aba9fb      0t0  TCP *:eforward (L
 * http://svn.apache.org/repos/asf/hbase/hbase.apache.org/trunk/0.94/book/standalone_dist.html
 * https://docs.cloudera.com/HDPDocuments/Ambari-2.7.5.0/managing-high-availability/content/amb_start_and_test_your_hbase_cluster.html
 * https://docs.cloudera.com/runtime/7.2.10/accessing-hbase/topics/hbase-use-commandline-utilities.html
+* https://hbase.apache.org/book.html#basic.prerequisites
