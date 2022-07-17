@@ -95,3 +95,4 @@ The configuration of the `standalone` mode is in [hbase-site.xml](conf/hbase-sit
 * https://docs.cloudera.com/HDPDocuments/Ambari-2.7.5.0/managing-high-availability/content/amb_start_and_test_your_hbase_cluster.html
 * https://docs.cloudera.com/runtime/7.2.10/accessing-hbase/topics/hbase-use-commandline-utilities.html
 * https://hbase.apache.org/book.html#basic.prerequisites
+* https://askubuntu.com/questions/493590/hbase-master-not-running-in-pseudo-distributed-mode
